@@ -30,17 +30,23 @@
     <img src="images/landscape.jpg" alt="好きな風景" width="400">
     <h2>お問い合わせ</h2>
     <form action="/submit" method="POST">
-        <label for="name">お名前:</label>
-        <input type="text" id="name" name="username" required>
-        <label for="name">お問い合わせ種別:</label>
-        <select name="prefecture">
-            <option value="">-- 選択してください --</option>
-            <option value="option1">一般的なお問い合わせ</option>
-            <option value="option2">ご意見・ご要望</option>
-        </select>
-        <label for="name">お問い合わせ内容:</label>
-        <textarea name="message" rows="5" required></textarea>
-        <input type="submit" value="送信する">
+        <div>
+            <label for="name">お名前:</label>
+            <input type="text" id="name" name="username" required>
+        </div>
+        <div>
+            <label for="name">お問い合わせ種別:</label>
+            <select name="prefecture">
+                <option value="">-- 選択してください --</option>
+                <option value="option1">一般的なお問い合わせ</option>
+                <option value="option2">ご意見・ご要望</option>
+            </select>
+            <label for="name">お問い合わせ内容:</label>
+            <textarea name="message" rows="5" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="送信する">
+        </div>
     </form>
 </body>
 </html>
